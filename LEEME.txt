@@ -1,0 +1,32 @@
+PORTAFOLIO - José Esteban Villagrán
+===================================
+
+Contenido:
+  index.html   -> el portafolio completo (un solo archivo, sin dependencias)
+
+Cómo verlo:
+  Abre index.html con doble clic en tu navegador.
+
+Cómo publicarlo gratis:
+  - Netlify: entra a app.netlify.com/drop y arrastra esta carpeta.
+  - GitHub Pages: sube index.html a un repositorio y activa Pages.
+
+Cómo agregar tus proyectos y demos:
+  1. Abre index.html con un editor de texto (Bloc de notas, VS Code).
+  2. Busca la línea que empieza con:  <script type="application/json" id="data">
+  3. Dentro de "projects" hay una lista. Cada proyecto tiene este formato:
+
+     {"id":"p4","title":"Nombre del proyecto","desc":"Descripción corta",
+      "tech":["HTML","CSS","JavaScript"],
+      "demo":"https://enlace-a-tu-demo.com",
+      "code":"https://github.com/villagranjose32/tu-repo",
+      "cat":"Web","emoji":"🚀","hue":265}
+
+     - demo y code son opcionales: si los dejas vacíos ("") el botón no aparece.
+     - cat es la categoría del filtro (Web, Móvil, Backend, etc.).
+     - hue es el color de la portada (0 a 360).
+     - Separa cada proyecto con una coma. El id debe ser distinto en cada uno.
+  4. Guarda y recarga el navegador.
+
+Los datos personales (nombre, contacto, formación) están en la misma línea,
+dentro de "profile".
